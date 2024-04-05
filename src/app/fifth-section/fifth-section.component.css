@@ -1,0 +1,55 @@
+.section-2-container {
+    font-family: var(--font-family);
+    text-align: center;
+    margin-top: 70px;
+    background-image: url(./bgsection.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+}
+.service {
+    font-size: 22px;
+    font-weight: 600;
+}
+.customS {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 15px auto auto auto;
+    width: 500px;
+}
+.loadButton{
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgb(3, 168, 245);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transform: translateY(100%); 
+    animation: slideIn 1s forwards; 
+}
+.btnDiv {
+    padding-top: 25px;
+}
+@keyframes slideIn {
+    to {
+      transform: translateY(0); /* Move to the left edge of the screen */
+    }
+  }
+
+
+  @media(max-width:517px){
+    .section-2-container {
+        width: 100vw;
+    }
+    .customS {
+        width: 100vw;
+    }
+}  
+  @media(max-width:365px){
+    .customS {
+        font-size: 30px;
+    }
+}  

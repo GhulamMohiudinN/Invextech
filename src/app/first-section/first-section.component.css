@@ -1,0 +1,96 @@
+.container {
+    font-family: var(--font-family);
+    padding-left: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(16, 16, 87, 0.5);
+}
+.bg-img {
+    background-image: url(./tim-gouw-bwki71ap-y8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin: 0;
+    padding: 0; */
+    height: 100%;
+    position: relative;
+}
+.heading-1 {
+    font-size: 55px;
+    padding-top: 70px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.invexTech {
+    font-weight: bold;
+}
+.subContainer {
+    position: relative;
+    display: flex;
+}
+.subHeading {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+    width: 750px;
+    transform: translateX(-100%); 
+    animation: slideIn 1s forwards; 
+}
+.loadButton{
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transform: translateX(-100%); 
+    animation: slideIn 1s forwards; 
+}
+.btnDiv {
+    padding-top: 15px;
+}
+
+
+
+  @keyframes slideIn {
+    to {
+      transform: translateX(0); /* Move to the left edge of the screen */
+    }
+  }
+
+
+  @media(max-width:695px){
+    .heading-1 {
+        font-size: 40px;
+        padding-top: 70px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+    .subHeading {
+        font-size: 19px;
+        padding-top: 40px;
+        width: 750px;
+    }
+    .container {
+        padding-left: 40px;
+    }
+  }
+  @media(max-width:544px){
+    .heading-1 {
+        font-size: 30px;
+        padding-top: 30px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+    .subHeading {
+        padding-top: 5px;
+    }
+    .btnDiv {
+        padding-top: 2px;
+    }
+  }

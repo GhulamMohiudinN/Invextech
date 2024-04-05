@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-white:rgb(255, 255, 255);
+    --color-primary: rgb(64, 168, 196);
+    --color-dark: rgb(0, 0, 0);
+    --font-family:'Nunito Sans', sans-serif;
+    --fs-16:16px; 
+}
+body {
+    margin: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

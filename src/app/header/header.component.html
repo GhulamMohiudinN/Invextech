@@ -1,0 +1,25 @@
+<nav>
+  <img
+    class="logo"
+    src="https://invextech.com/wp-content/uploads/2023/10/logo-invextech.png"
+    alt="LOGO"
+  />
+  <ul class="ul">
+    <li class="ulli"><a href="#" class="nav-ankar">Projects</a></li>
+    <li class="ulli"><a href="#" class="nav-ankar">Service</a></li>
+    <li class="ulli"><a href="#" class="nav-ankar">Company</a></li>
+    <li class="ulli"><a href="#" class="nav-ankar">Career</a></li>
+    <div (click)="toggle()" class="toggle-div">
+      <img class="toggle" src="assets/burger.png" alt="" />
+    </div>
+    <div class="contactus">
+      <a href="#" class="nav-ankar | contact">Contact Us</a>
+    </div>
+  </ul>
+  <ul class="mobile-ul" *ngIf="display">
+    <li class="mobile-li"><a href="#" class="nav-ankar-mob">Projects</a></li>
+    <li class="mobile-li"><a href="#" class="nav-ankar-mob">Services</a></li>
+    <li class="mobile-li"><a href="#" class="nav-ankar-mob">Company</a></li>
+    <li class="mobile-li"><a href="#" class="nav-ankar-mob">Career</a></li>
+  </ul>
+</nav>
